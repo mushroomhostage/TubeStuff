@@ -7,6 +7,8 @@ import net.minecraft.server.CraftingRecipe;
 import net.minecraft.server.InventoryCrafting;
 import net.minecraft.server.ItemStack;
 
+import org.bukkit.inventory.Recipe;
+
 public class RecipeHorizontalCut implements CraftingRecipe
 {
     private static HashMap damageMap = new HashMap();
@@ -78,5 +80,11 @@ public class RecipeHorizontalCut implements CraftingRecipe
     public ItemStack b()
     {
         return new ItemStack(CoverSystemProxy.blockMultipart, 1, 0);
+    }
+
+    // TODO
+    public Recipe toBukkitRecipe()
+    {
+        return null;
     }
 }
