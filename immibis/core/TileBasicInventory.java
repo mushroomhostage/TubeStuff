@@ -5,6 +5,10 @@ import net.minecraft.server.IInventory;
 import net.minecraft.server.ItemStack;
 import net.minecraft.server.NBTTagCompound;
 
+import org.bukkit.craftbukkit.entity.CraftHumanEntity;
+import java.util.List;
+import java.util.ArrayList;
+
 public class TileBasicInventory extends TileCombined implements IInventory
 {
     public BasicInventory inv;
@@ -14,6 +18,37 @@ public class TileBasicInventory extends TileCombined implements IInventory
     {
         this.inv = new BasicInventory(var1);
         this.invname = var2;
+    }
+
+    public List transaction;
+
+    public TileBasicInventory()
+    {
+        transaction = new ArrayList();
+    }
+
+    public void onOpen(CraftHumanEntity crafthumanentity)
+    {
+        transaction.add(crafthumanentity);
+    }
+
+    public void onClose(CraftHumanEntity crafthumanentity)
+    {
+        transaction.remove(crafthumanentity);
+    }
+
+    public List getViewers()
+    {
+        return transaction;
+    }
+
+    public void setMaxStackSize(int i)
+    {
+    }
+
+    public ItemStack[] getContents()
+    {
+        return this.inv.contents;
     }
 
     /**

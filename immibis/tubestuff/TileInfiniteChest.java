@@ -10,11 +10,46 @@ import net.minecraft.server.ItemStack;
 import net.minecraft.server.NBTTagCompound;
 import net.minecraft.server.NBTTagList;
 
+import org.bukkit.craftbukkit.entity.CraftHumanEntity;
+import java.util.List;
+import java.util.ArrayList;
+
 public class TileInfiniteChest extends TileCombined implements IInventory
 {
     public List items = new ArrayList();
     int maxPages = 1;
     public static final int PAGESIZE = 78;
+
+    public List transaction;
+
+    public TileInfiniteChest()
+    {
+        transaction = new ArrayList();
+    }
+
+    public void onOpen(CraftHumanEntity crafthumanentity)
+    {
+        transaction.add(crafthumanentity);
+    }
+
+    public void onClose(CraftHumanEntity crafthumanentity)
+    {
+        transaction.remove(crafthumanentity);
+    }
+
+    public List getViewers()
+    {
+        return transaction;
+    }
+
+    public void setMaxStackSize(int i)
+    {
+    }
+
+    public ItemStack[] getContents()
+    {
+        return (ItemStack[])items.toArray();
+    }
 
     public void updateMaxPages()
     {
