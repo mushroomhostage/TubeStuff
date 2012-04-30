@@ -1,8 +1,8 @@
 package immibis.core.covers;
 
-import net.minecraft.src.NBTTagCompound;
-import net.minecraft.src.Packet;
-import net.minecraft.src.TileEntity;
+import net.minecraft.server.NBTTagCompound;
+import net.minecraft.server.Packet;
+import net.minecraft.server.TileEntity;
 
 public class TileMultipart extends TileEntity implements ICoverableTile
 {

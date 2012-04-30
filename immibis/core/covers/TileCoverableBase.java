@@ -1,9 +1,9 @@
 package immibis.core.covers;
 
 import java.util.Iterator;
-import net.minecraft.src.Block;
-import net.minecraft.src.NBTTagCompound;
-import net.minecraft.src.TileEntity;
+import net.minecraft.server.Block;
+import net.minecraft.server.NBTTagCompound;
+import net.minecraft.server.TileEntity;
 
 public abstract class TileCoverableBase extends TileEntity implements ICoverableTile
 {

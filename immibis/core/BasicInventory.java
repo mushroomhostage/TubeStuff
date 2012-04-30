@@ -1,9 +1,9 @@
 package immibis.core;
 
-import net.minecraft.src.IInventory;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.NBTTagCompound;
-import net.minecraft.src.NBTTagList;
+import net.minecraft.server.IInventory;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.NBTTagCompound;
+import net.minecraft.server.NBTTagList;
 
 public class BasicInventory
 {

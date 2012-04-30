@@ -1,7 +1,7 @@
 package immibis.core.covers;
 
-import net.minecraft.src.Block;
-import net.minecraft.src.EntityHuman;
+import net.minecraft.server.Block;
+import net.minecraft.server.EntityHuman;
 
 public class PartType
 {

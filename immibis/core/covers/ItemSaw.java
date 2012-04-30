@@ -2,8 +2,8 @@ package immibis.core.covers;
 
 import forge.ITextureProvider;
 import immibis.core.NonSharedProxy;
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemStack;
+import net.minecraft.server.Item;
+import net.minecraft.server.ItemStack;
 
 public class ItemSaw extends Item implements ITextureProvider
 {

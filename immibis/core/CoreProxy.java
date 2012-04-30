@@ -3,7 +3,7 @@ package immibis.core;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
-import net.minecraft.src.mod_ImmibisCore;
+import net.minecraft.server.mod_ImmibisCore;
 
 public class CoreProxy
 {

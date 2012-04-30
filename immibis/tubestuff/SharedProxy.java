@@ -3,10 +3,10 @@ package immibis.tubestuff;
 import immibis.core.MCVersionProxy;
 import immibis.core.config.ExtendedForgeConfigReader;
 import java.io.IOException;
-import net.minecraft.src.Block;
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.mod_TubeStuff;
+import net.minecraft.server.Block;
+import net.minecraft.server.Item;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.mod_TubeStuff;
 
 public class SharedProxy
 {
@@ -38,7 +38,7 @@ public class SharedProxy
     {
         try
         {
-            return SharedProxy.class.getClassLoader().loadClass("net.minecraft.src." + var0);
+            return SharedProxy.class.getClassLoader().loadClass("net.minecraft.server." + var0);
         }
         catch (ClassNotFoundException var4)
         {

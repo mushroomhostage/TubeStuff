@@ -1,11 +1,11 @@
 package immibis.core.covers;
 
-import net.minecraft.src.Block;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.ItemBlock;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.World;
+import net.minecraft.server.Block;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.ItemBlock;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.TileEntity;
+import net.minecraft.server.World;
 
 public class ItemMultipart extends ItemBlock
 {

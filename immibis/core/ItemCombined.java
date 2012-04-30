@@ -1,7 +1,7 @@
 package immibis.core;
 
-import net.minecraft.src.ItemBlock;
-import net.minecraft.src.ItemStack;
+import net.minecraft.server.ItemBlock;
+import net.minecraft.server.ItemStack;
 
 public class ItemCombined extends ItemBlock
 {

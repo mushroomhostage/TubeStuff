@@ -6,13 +6,13 @@ import immibis.core.GuiSystem;
 import immibis.core.TileBasicInventory;
 import java.util.Iterator;
 import java.util.logging.Level;
-import net.minecraft.src.CraftingManager;
-import net.minecraft.src.CraftingRecipe;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.InventoryCrafting;
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.ModLoader;
+import net.minecraft.server.CraftingManager;
+import net.minecraft.server.CraftingRecipe;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.InventoryCrafting;
+import net.minecraft.server.Item;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.ModLoader;
 
 public class TileCraftingTable extends TileBasicInventory implements ISidedInventory
 {

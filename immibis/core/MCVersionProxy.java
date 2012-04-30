@@ -1,8 +1,8 @@
 package immibis.core;
 
-import net.minecraft.src.Block;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.ModLoader;
+import net.minecraft.server.Block;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.ModLoader;
 
 public class MCVersionProxy
 {

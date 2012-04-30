@@ -5,8 +5,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import net.minecraft.src.Packet;
-import net.minecraft.src.Packet250CustomPayload;
+import net.minecraft.server.Packet;
+import net.minecraft.server.Packet250CustomPayload;
 
 public class Packet230ModLoader
 {

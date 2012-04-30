@@ -6,11 +6,11 @@ import forge.MessageManager;
 import forge.MinecraftForge;
 import forge.NetworkMod;
 import java.io.IOException;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.NetServerHandler;
-import net.minecraft.src.NetworkManager;
-import net.minecraft.src.Packet1Login;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.EntityPlayer;
+import net.minecraft.server.NetServerHandler;
+import net.minecraft.server.NetworkManager;
+import net.minecraft.server.Packet1Login;
 
 public abstract class CompatibleBaseMod extends NetworkMod
 {

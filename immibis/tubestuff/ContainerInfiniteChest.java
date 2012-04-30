@@ -2,13 +2,13 @@ package immibis.tubestuff;
 
 import immibis.core.BasicInventory;
 import java.util.Iterator;
-import net.minecraft.src.Container;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.ICrafting;
-import net.minecraft.src.IInventory;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.ModLoader;
-import net.minecraft.src.Slot;
+import net.minecraft.server.Container;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.ICrafting;
+import net.minecraft.server.IInventory;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.ModLoader;
+import net.minecraft.server.Slot;
 
 public class ContainerInfiniteChest extends Container
 {

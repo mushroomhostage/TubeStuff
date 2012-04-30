@@ -1,9 +1,9 @@
 package immibis.core;
 
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.IInventory;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.NBTTagCompound;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.IInventory;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.NBTTagCompound;
 
 public class TileBasicInventory extends TileCombined implements IInventory
 {

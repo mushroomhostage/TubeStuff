@@ -13,13 +13,13 @@ import immibis.core.covers.recipes.RecipeVerticalCut;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import net.minecraft.src.Block;
-import net.minecraft.src.CraftingManager;
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.LocaleLanguage;
-import net.minecraft.src.Material;
-import net.minecraft.src.mod_ImmibisCore;
+import net.minecraft.server.Block;
+import net.minecraft.server.CraftingManager;
+import net.minecraft.server.Item;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.LocaleLanguage;
+import net.minecraft.server.Material;
+import net.minecraft.server.mod_ImmibisCore;
 
 public class CoverSystemProxy
 {

@@ -1,12 +1,12 @@
 package immibis.core.covers;
 
 import java.util.Iterator;
-import net.minecraft.src.Block;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.World;
+import net.minecraft.server.Block;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.Item;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.TileEntity;
+import net.minecraft.server.World;
 
 public abstract class ItemCoverableBase extends Item
 {

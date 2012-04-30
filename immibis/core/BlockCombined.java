@@ -4,14 +4,14 @@ import forge.ITextureProvider;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
-import net.minecraft.src.BlockContainer;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.EntityItem;
-import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.Material;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.World;
+import net.minecraft.server.BlockContainer;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.EntityItem;
+import net.minecraft.server.IBlockAccess;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.Material;
+import net.minecraft.server.TileEntity;
+import net.minecraft.server.World;
 
 public abstract class BlockCombined extends BlockContainer implements ITextureProvider
 {

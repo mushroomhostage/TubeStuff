@@ -1,9 +1,9 @@
 package immibis.core;
 
 import java.io.File;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.Packet3Chat;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.EntityPlayer;
+import net.minecraft.server.Packet3Chat;
 
 public class NonSharedProxy
 {

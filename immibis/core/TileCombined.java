@@ -1,7 +1,7 @@
 package immibis.core;
 
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.TileEntity;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.TileEntity;
 
 public abstract class TileCombined extends TileEntity
 {

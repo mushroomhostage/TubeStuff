@@ -1,11 +1,11 @@
 package immibis.core.covers;
 
 import java.util.ArrayList;
-import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.Material;
-import net.minecraft.src.MovingObjectPosition;
-import net.minecraft.src.Vec3D;
-import net.minecraft.src.World;
+import net.minecraft.server.AxisAlignedBB;
+import net.minecraft.server.Material;
+import net.minecraft.server.MovingObjectPosition;
+import net.minecraft.server.Vec3D;
+import net.minecraft.server.World;
 
 public abstract class BlockCoverableBase extends BlockMultipart
 {

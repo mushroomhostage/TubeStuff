@@ -1,4 +1,4 @@
-package net.minecraft.src;
+package net.minecraft.server;
 
 import immibis.core.CompatibleBaseMod;
 import immibis.core.CoreProxy;

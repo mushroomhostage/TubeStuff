@@ -1,10 +1,10 @@
 package immibis.core;
 
-import net.minecraft.src.Container;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.mod_ImmibisCore;
+import net.minecraft.server.Container;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.EntityPlayer;
+import net.minecraft.server.TileEntity;
+import net.minecraft.server.mod_ImmibisCore;
 
 public class GuiSystem
 {

@@ -9,13 +9,13 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Iterator;
 import java.util.LinkedList;
-import net.minecraft.src.ContainerChest;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.ModLoader;
-import net.minecraft.src.NBTTagCompound;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.World;
+import net.minecraft.server.ContainerChest;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.ModLoader;
+import net.minecraft.server.NBTTagCompound;
+import net.minecraft.server.TileEntity;
+import net.minecraft.server.World;
 
 public class TileBuffer extends TileBasicInventory implements IPeripheral
 {

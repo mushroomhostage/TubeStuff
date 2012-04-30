@@ -2,15 +2,15 @@ package immibis.core.covers;
 
 import java.util.ArrayList;
 import java.util.WeakHashMap;
-import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.BlockContainer;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.Material;
-import net.minecraft.src.MovingObjectPosition;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.Vec3D;
-import net.minecraft.src.World;
+import net.minecraft.server.AxisAlignedBB;
+import net.minecraft.server.BlockContainer;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.Material;
+import net.minecraft.server.MovingObjectPosition;
+import net.minecraft.server.TileEntity;
+import net.minecraft.server.Vec3D;
+import net.minecraft.server.World;
 
 public class BlockMultipart extends BlockContainer implements ICoverableBlock
 {

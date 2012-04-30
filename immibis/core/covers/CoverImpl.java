@@ -7,18 +7,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
-import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.Block;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.MovingObjectPosition;
-import net.minecraft.src.NBTTagCompound;
-import net.minecraft.src.NBTTagList;
-import net.minecraft.src.Packet;
-import net.minecraft.src.Packet250CustomPayload;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.Vec3D;
-import net.minecraft.src.World;
+import net.minecraft.server.AxisAlignedBB;
+import net.minecraft.server.Block;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.MovingObjectPosition;
+import net.minecraft.server.NBTTagCompound;
+import net.minecraft.server.NBTTagList;
+import net.minecraft.server.Packet;
+import net.minecraft.server.Packet250CustomPayload;
+import net.minecraft.server.TileEntity;
+import net.minecraft.server.Vec3D;
+import net.minecraft.server.World;
 
 public class CoverImpl
 {

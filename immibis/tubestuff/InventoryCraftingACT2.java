@@ -1,9 +1,9 @@
 package immibis.tubestuff;
 
-import net.minecraft.src.Container;
-import net.minecraft.src.EntityHuman;
-import net.minecraft.src.IInventory;
-import net.minecraft.src.InventoryCrafting;
+import net.minecraft.server.Container;
+import net.minecraft.server.EntityHuman;
+import net.minecraft.server.IInventory;
+import net.minecraft.server.InventoryCrafting;
 
 public class InventoryCraftingACT2 extends InventoryCrafting
 {

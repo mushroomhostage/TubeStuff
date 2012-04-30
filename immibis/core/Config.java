@@ -5,8 +5,8 @@ import forge.MinecraftForge;
 import forge.Property;
 import java.io.File;
 import java.util.HashSet;
-import net.minecraft.src.Block;
-import net.minecraft.src.Item;
+import net.minecraft.server.Block;
+import net.minecraft.server.Item;
 
 public class Config
 {

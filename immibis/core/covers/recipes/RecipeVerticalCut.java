@@ -3,9 +3,9 @@ package immibis.core.covers.recipes;
 import immibis.core.BlockMetaPair;
 import immibis.core.covers.CoverSystemProxy;
 import java.util.HashMap;
-import net.minecraft.src.CraftingRecipe;
-import net.minecraft.src.InventoryCrafting;
-import net.minecraft.src.ItemStack;
+import net.minecraft.server.CraftingRecipe;
+import net.minecraft.server.InventoryCrafting;
+import net.minecraft.server.ItemStack;
 
 public class RecipeVerticalCut implements CraftingRecipe
 {

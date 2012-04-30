@@ -3,12 +3,12 @@ package immibis.tubestuff;
 import immibis.core.BlockCombined;
 import immibis.core.TileCombined;
 import java.util.ArrayList;
-import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.Material;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.World;
-import net.minecraft.src.mod_TubeStuff;
+import net.minecraft.server.IBlockAccess;
+import net.minecraft.server.ItemStack;
+import net.minecraft.server.Material;
+import net.minecraft.server.TileEntity;
+import net.minecraft.server.World;
+import net.minecraft.server.mod_TubeStuff;
 
 public class BlockTubestuff extends BlockCombined
 {

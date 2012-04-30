@@ -1,8 +1,8 @@
 package immibis.core.covers;
 
-import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.NBTBase;
-import net.minecraft.src.NBTTagCompound;
+import net.minecraft.server.AxisAlignedBB;
+import net.minecraft.server.NBTBase;
+import net.minecraft.server.NBTTagCompound;
 
 public class Part
 {
