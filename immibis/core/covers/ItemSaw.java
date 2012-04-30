@@ -47,13 +47,4 @@ public class ItemSaw extends Item implements ITextureProvider
     {
         return false;
     }
-
-    /**
-     * If this returns true, after a recipe involving this item is crafted the container item will be added to the
-     * player's inventory instead of remaining in the crafting grid.
-     */
-    public boolean e(ItemStack var1)
-    {
-        return false;
-    }
 }
