@@ -12,13 +12,23 @@ import net.minecraft.server.Slot;
 
 public class ContainerInfiniteChest extends Container
 {
-    private IInventory player;
+    private EntityHuman player;
     public TileInfiniteChest chest;
     public int page;
     public static final int WIDTH = 13;
     public static final int HEIGHT = 6;
     private int lastPage = -1;
     private int lastMaxPages = -1;
+
+    public EntityHuman getPlayer()
+    {
+        return player;
+    }
+
+    public IInventory getInventory()
+    {
+        return chest;
+    }
 
     public void setPage(int var1)
     {
@@ -40,19 +50,19 @@ public class ContainerInfiniteChest extends Container
         {
             for (var4 = 0; var4 < 9; ++var4)
             {
-                this.a(new Slot(this.player, var4 + var3 * 9 + 9, var4 * 18 + 5, var3 * 18 + 123));
+                this.a(new Slot(this.player.inventory, var4 + var3 * 9 + 9, var4 * 18 + 5, var3 * 18 + 123));
             }
         }
 
         for (var3 = 0; var3 < 9; ++var3)
         {
-            this.a(new Slot(this.player, var3, var3 * 18 + 5, 181));
+            this.a(new Slot(this.player.inventory, var3, var3 * 18 + 5, 181));
         }
 
         this.chest.update();
     }
 
-    public ContainerInfiniteChest(IInventory var1, TileInfiniteChest var2)
+    public ContainerInfiniteChest(EntityHuman var1, TileInfiniteChest var2)
     {
         this.player = var1;
         this.chest = var2;
@@ -141,13 +151,13 @@ public class ContainerInfiniteChest extends Container
             {
                 int var3 = ((Integer)ModLoader.getPrivateValue(Slot.class, var2, 0)).intValue();
 
-                if (var2.inventory == this.player)
+                if (var2.inventory == this.player.inventory)
                 {
-                    BasicInventory.mergeStackIntoRange(this.player, this.chest, var3, 0, this.chest.items.size() + 1);
+                    BasicInventory.mergeStackIntoRange(this.player.inventory, this.chest, var3, 0, this.chest.items.size() + 1);
                 }
                 else if (var2.inventory == this.chest)
                 {
-                    BasicInventory.mergeStackIntoRange(this.chest, this.player, var3, 0, 36);
+                    BasicInventory.mergeStackIntoRange(this.chest, this.player.inventory, var3, 0, 36);
                 }
 
                 return null;

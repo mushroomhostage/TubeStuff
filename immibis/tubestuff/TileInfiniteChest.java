@@ -68,7 +68,7 @@ public class TileInfiniteChest extends TileCombined implements IInventory
 
     public boolean onBlockActivated(EntityHuman var1)
     {
-        GuiSystem.OpenStringGUI(TileInfiniteChest.class, "gui", var1, new ContainerInfiniteChest(var1.inventory, this), this);
+        GuiSystem.OpenStringGUI(TileInfiniteChest.class, "gui", var1, new ContainerInfiniteChest(var1, this), this);
         return true;
     }
 
