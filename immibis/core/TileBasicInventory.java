@@ -13,18 +13,13 @@ public class TileBasicInventory extends TileCombined implements IInventory
 {
     public BasicInventory inv;
     public String invname;
+    public List transaction;
 
     public TileBasicInventory(int var1, String var2)
     {
         this.inv = new BasicInventory(var1);
         this.invname = var2;
-    }
-
-    public List transaction;
-
-    public TileBasicInventory()
-    {
-        transaction = new ArrayList();
+        this.transaction = new ArrayList();
     }
 
     public void onOpen(CraftHumanEntity crafthumanentity)

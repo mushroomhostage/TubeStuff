@@ -10,11 +10,21 @@ import net.minecraft.server.Slot;
 
 public class ContainerCraftingTable extends Container
 {
-    private IInventory player;
+    private EntityHuman player;
     private IInventory table;
     private int invStart;
 
-    public ContainerCraftingTable(IInventory var1, IInventory var2)
+    public EntityHuman getPlayer()
+    {
+        return this.player;
+    }
+
+    public IInventory getInventory()
+    {
+        return this.table;
+    }
+
+    public ContainerCraftingTable(EntityHuman var1, IInventory var2)
     {
         this.player = var1;
         this.table = var2;
@@ -44,10 +54,10 @@ public class ContainerCraftingTable extends Container
         {
             for (var4 = 0; var4 < 3; ++var4)
             {
-                this.a(new Slot(var1, var3 + var4 * 9 + 9, var3 * 18 + 13, var4 * 18 + 168));
+                this.a(new Slot(var1.inventory, var3 + var4 * 9 + 9, var3 * 18 + 13, var4 * 18 + 168));
             }
 
-            this.a(new Slot(var1, var3, var3 * 18 + 13, 226));
+            this.a(new Slot(var1.inventory, var3, var3 * 18 + 13, 226));
         }
     }
 
@@ -64,11 +74,11 @@ public class ContainerCraftingTable extends Container
 
             if (var1 < this.invStart)
             {
-                BasicInventory.mergeStackIntoRange(this.table, this.player, var3, 0, 36);
+                BasicInventory.mergeStackIntoRange(this.table, this.player.inventory, var3, 0, 36);
             }
             else
             {
-                BasicInventory.mergeStackIntoRange(this.player, this.table, var3, 10, 55);
+                BasicInventory.mergeStackIntoRange(this.player.inventory, this.table, var3, 10, 55);
             }
 
             return null;

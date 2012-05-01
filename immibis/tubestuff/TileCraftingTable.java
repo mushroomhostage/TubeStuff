@@ -264,7 +264,7 @@ public class TileCraftingTable extends TileBasicInventory implements ISidedInven
 
     public boolean onBlockActivated(EntityHuman var1)
     {
-        GuiSystem.OpenStringGUI(TileCraftingTable.class, "gui", var1, new ContainerCraftingTable(var1.inventory, this), this);
+        GuiSystem.OpenStringGUI(TileCraftingTable.class, "gui", var1, new ContainerCraftingTable(var1, this), this);
         return true;
     }
 
