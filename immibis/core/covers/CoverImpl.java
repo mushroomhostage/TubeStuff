@@ -112,7 +112,7 @@ public class CoverImpl
         int var7 = 0;
         var5 = var5.add((double)(-var2), (double)(-var3), (double)(-var4));
         var6 = var6.add((double)(-var2), (double)(-var3), (double)(-var4));
-        double var8 = var6.d(var5) + 1.0D;
+        double var8 = var6.distanceSquared(var5) + 1.0D;
         Part var10 = null;
         MovingObjectPosition var11 = null;
         int var12 = -1;
@@ -126,7 +126,7 @@ public class CoverImpl
 
             if (var16 != null)
             {
-                double var17 = var16.pos.d(var5);
+                double var17 = var16.pos.distanceSquared(var5);
 
                 if (var17 < var8)
                 {
